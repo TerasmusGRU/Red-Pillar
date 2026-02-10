@@ -211,7 +211,7 @@ export const solution = {
     {
       icon: "CheckCircle",
       title: "Tailored Solutions",
-      description: "Customized compliance strategies designed for your unique needs"
+      description: "Customised compliance strategies designed for your unique needs"
     },
     {
       icon: "CheckCircle",
