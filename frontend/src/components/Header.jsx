@@ -37,7 +37,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <img 
-              src="https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/k1mszp3i_Logo.jpg"
+              src="https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/7befedf2_Picture1%20-%20Edited%20%281%29.png"
               alt="RedPillar Compliance"
               className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
             />
@@ -52,9 +52,7 @@ const Header = () => {
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   location.pathname === link.path
                     ? 'text-red-600 bg-red-50'
-                    : isScrolled
-                    ? 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
-                    : 'text-gray-800 hover:text-red-600 hover:bg-white/10'
+                    : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
                 }`}
               >
                 {link.name}
