@@ -184,7 +184,7 @@ const Services = () => {
                 <CardContent className="p-8 text-white">
                   <h3 className="text-xl font-bold mb-3">Tailored Solutions</h3>
                   <p className="text-gray-200">
-                    Every service is customized to your institution's unique needs and challenges
+                    Every service is customised to your institution's unique needs and challenges
                   </p>
                 </CardContent>
               </Card>
@@ -227,7 +227,7 @@ const Services = () => {
             Let's Discuss Your Compliance Needs
           </h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Every institution is unique. Let's create a customized compliance solution for you.
+            Every institution is unique. Let's create a customised compliance solution for you.
           </p>
           <Link to="/contact">
             <Button className="bg-red-600 hover:bg-red-700 text-white px-10 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
