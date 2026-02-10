@@ -149,13 +149,9 @@ const Home = () => {
                     <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
-                    <div className="flex items-center text-red-600 font-medium group-hover:translate-x-2 transition-transform duration-300">
-                      Learn more
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
                   </CardContent>
                 </Card>
               );

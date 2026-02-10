@@ -36,11 +36,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/7befedf2_Picture1%20-%20Edited%20%281%29.png"
-              alt="RedPillar Compliance"
-              className="h-12 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="bg-white rounded-lg p-2 shadow-md">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/7befedf2_Picture1%20-%20Edited%20%281%29.png"
+                alt="RedPillar Compliance"
+                className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -49,10 +51,12 @@ const Header = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
                   location.pathname === link.path
-                    ? 'text-red-600 bg-red-50'
-                    : 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
+                    ? 'text-red-600 bg-white shadow-md'
+                    : isScrolled
+                    ? 'text-gray-700 hover:text-red-600 hover:bg-gray-50'
+                    : 'text-white hover:text-red-400 hover:bg-white/20 shadow-sm'
                 }`}
               >
                 {link.name}
