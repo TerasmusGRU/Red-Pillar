@@ -64,20 +64,30 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li className="text-sm hover:text-red-500 transition-colors duration-200 cursor-pointer">
-                Compliance Officer Services
+              <li>
+                <Link to="/services" className="text-sm hover:text-red-500 transition-colors duration-200">
+                  Compliance Officer Services
+                </Link>
               </li>
-              <li className="text-sm hover:text-red-500 transition-colors duration-200 cursor-pointer">
-                Risk Management
+              <li>
+                <Link to="/services" className="text-sm hover:text-red-500 transition-colors duration-200">
+                  Risk Management
+                </Link>
               </li>
-              <li className="text-sm hover:text-red-500 transition-colors duration-200 cursor-pointer">
-                Compliance Monitoring
+              <li>
+                <Link to="/services" className="text-sm hover:text-red-500 transition-colors duration-200">
+                  Compliance Monitoring
+                </Link>
               </li>
-              <li className="text-sm hover:text-red-500 transition-colors duration-200 cursor-pointer">
-                Mentorship Program
+              <li>
+                <Link to="/services" className="text-sm hover:text-red-500 transition-colors duration-200">
+                  Mentorship Program
+                </Link>
               </li>
-              <li className="text-sm hover:text-red-500 transition-colors duration-200 cursor-pointer">
-                Compliance Training
+              <li>
+                <Link to="/services" className="text-sm hover:text-red-500 transition-colors duration-200">
+                  Compliance Training
+                </Link>
               </li>
             </ul>
           </div>
