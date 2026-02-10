@@ -133,7 +133,7 @@ export const team = [
     id: 1,
     name: "Chase Muir",
     role: "Compliance Powerhouse",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
+    image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/2xugd5cm_Chase%20photo.jpeg",
     bio: "With over 11 years of experience in operational risk management and compliance, Chase brings unmatched expertise to every engagement.",
     expertise: [
       "Operational Risk Management and Compliance",
