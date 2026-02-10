@@ -99,31 +99,6 @@ const Footer = () => {
                 <span>{companyInfo.address}</span>
               </li>
             </ul>
-
-            {/* Social Media */}
-            <div className="flex space-x-4 mt-6">
-              <a 
-                href="#" 
-                className="p-2 bg-gray-800 rounded-lg hover:bg-red-600 transition-colors duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="p-2 bg-gray-800 rounded-lg hover:bg-red-600 transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="p-2 bg-gray-800 rounded-lg hover:bg-red-600 transition-colors duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-            </div>
           </div>
         </div>
       </div>
