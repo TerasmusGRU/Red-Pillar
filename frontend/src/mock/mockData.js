@@ -5,7 +5,7 @@ export const companyInfo = {
   tagline: "Transforming Compliance into Confidence",
   description: "Your strategic partner in Financial Services Risk management and Compliance",
   email: "info@redpillar.co.za",
-  phone: "+27 (0) XX XXX XXXX",
+  phone: "+27 72 576 6575",
   address: "South Africa"
 };
 
