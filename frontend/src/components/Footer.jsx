@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { companyInfo } from '../mock/mockData';
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/k1mszp3i_Logo.jpg"
+              src="https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/7befedf2_Picture1%20-%20Edited%20%281%29.png"
               alt="RedPillar Compliance"
               className="h-12 w-auto mb-4"
             />
@@ -22,7 +22,7 @@ const Footer = () => {
               {companyInfo.tagline}
             </p>
             <p className="text-sm text-gray-400">
-              Your strategic partner in financial services compliance.
+              {companyInfo.description}
             </p>
           </div>
 
