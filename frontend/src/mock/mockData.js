@@ -3,8 +3,8 @@
 export const companyInfo = {
   name: "RedPillar Compliance",
   tagline: "Transforming Compliance into Confidence",
-  description: "Your strategic partner in navigating the complex world of financial services compliance",
-  email: "info@redpillarcompliance.com",
+  description: "Your strategic partner in Financial Services Risk management and Compliance",
+  email: "info@redpillar.co.za",
   phone: "+27 (0) XX XXX XXXX",
   address: "South Africa"
 };
@@ -25,7 +25,7 @@ export const services = [
     id: 1,
     title: "Dedicated Compliance Officer",
     icon: "Shield",
-    description: "Your dedicated CO managing your full compliance profile, regulator engagement, and strategic guidance.",
+    description: "Your dedicated Compliance Officer managing your full compliance profile, regulator engagement, and strategic guidance.",
     features: [
       "Manage compliance profile and submissions",
       "Guidance on regulatory universe (FSCA, PA, Information Regulator)",
@@ -134,10 +134,10 @@ export const team = [
     name: "Chase Muir",
     role: "Compliance Powerhouse",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
-    bio: "With over 11 years of experience in operational compliance and risk management, Chase brings unmatched expertise to every engagement.",
+    bio: "With over 11 years of experience in operational risk management and compliance, Chase brings unmatched expertise to every engagement.",
     expertise: [
-      "Operational Compliance & Risk Management",
-      "FSCA, PA, Information Regulator engagement",
+      "Operational Risk Management and Compliance",
+      "Seasoned professional in regulator engagement",
       "Registered with CISA & IRMSA",
       "Practical, scalable compliance solutions"
     ],
