@@ -6,6 +6,8 @@ import { Card, CardContent } from '../components/ui/card';
 import { heroContent, services, solution } from '../mock/mockData';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
