@@ -140,6 +140,7 @@ const Home = () => {
                 <Card 
                   key={service.id} 
                   className="border-2 border-gray-100 hover:border-red-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group cursor-pointer"
+                  onClick={() => navigate('/services')}
                 >
                   <CardContent className="p-8">
                     <div className="p-4 bg-red-50 rounded-xl w-fit mb-6 group-hover:bg-red-600 transition-all duration-300 group-hover:scale-110">
