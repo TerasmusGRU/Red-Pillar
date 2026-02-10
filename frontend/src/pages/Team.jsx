@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Award, Briefcase, ArrowRight, CheckCircle, Mail, Linkedin } from 'lucide-react';
+import { Award, Briefcase, ArrowRight, CheckCircle, Mail } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -115,16 +115,6 @@ const Team = () => {
                             </li>
                           ))}
                         </ul>
-                      </div>
-
-                      {/* Contact Icons */}
-                      <div className="flex space-x-4 pt-4">
-                        <button className="p-3 bg-gray-100 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 group/btn">
-                          <Mail className="h-5 w-5" />
-                        </button>
-                        <button className="p-3 bg-gray-100 rounded-lg hover:bg-red-600 hover:text-white transition-all duration-300 group/btn">
-                          <Linkedin className="h-5 w-5" />
-                        </button>
                       </div>
                     </div>
                   </CardContent>
