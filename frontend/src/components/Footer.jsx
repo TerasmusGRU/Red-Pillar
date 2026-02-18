@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/services" className="text-sm hover:text-red-500 transition-colors duration-200">
-                  Compliance Training
+                  Succession Planning
                 </Link>
               </li>
             </ul>
