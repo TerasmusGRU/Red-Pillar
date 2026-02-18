@@ -147,7 +147,7 @@ export const team = [
     id: 2,
     name: "Tinita Gerber",
     role: "Compliance Strategist",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400",
+    image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/b99v3l64_Tinita%20Image.jpg",
     bio: "Tinita blends legal expertise with practical compliance know-how, bringing nearly 7 years of experience including 4 years in financial services.",
     expertise: [
       "Long-Term Insurance & FAIS expertise",
@@ -161,7 +161,7 @@ export const team = [
     id: 3,
     name: "Rigert du Toit",
     role: "Contract Drafting Specialist",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400",
+    image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/dfswvj9w_Rigert.jpg",
     bio: "With over 4 years of FAIS-related compliance experience, Rigert builds frameworks that elevate operational integrity.",
     expertise: [
       "FAIS, FICA, POPIA legislation",
