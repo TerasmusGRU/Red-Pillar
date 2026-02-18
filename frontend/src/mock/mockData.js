@@ -71,14 +71,14 @@ export const services = [
   },
   {
     id: 5,
-    title: "Compliance Training",
+    title: "Compliance Succession Planning",
     icon: "BookOpen",
-    description: "Expert training and guidance to elevate your team's compliance understanding.",
+    description: "Build internal compliance capacity with structured succession planning and guidance.",
     features: [
-      "Tailored compliance training programs",
-      "Regulatory update sessions",
-      "Best practice workshops",
-      "Practical compliance guidance"
+      "Review of current Compliance Succession",
+      "Practical Compliance Guidance on Succession Planning",
+      "Identification of suitable successors",
+      "Knowledge transfer and empowerment"
     ]
   },
   {
