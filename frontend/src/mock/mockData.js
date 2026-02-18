@@ -132,44 +132,45 @@ export const team = [
   {
     id: 1,
     name: "Chase Muir",
-    role: "Compliance Powerhouse",
+    role: "Operational Risk Management and Compliance Specialist",
     image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/2xugd5cm_Chase%20photo.jpeg",
     bio: "With over 11 years of experience in operational risk management and compliance, Chase brings unmatched expertise to every engagement.",
     expertise: [
       "Operational Risk Management and Compliance",
       "Seasoned professional in regulator engagement",
-      "Registered with CISA & IRMSA",
+      "Registered with CAT I, II, IIA & IV",
+      "CISA 'Member'",
       "Practical, scalable compliance solutions"
     ],
-    credentials: ["CISA", "IRMSA", "11+ Years"]
+    credentials: ["CAT I, II, IIA & IV", "CISA Member", "11+ Years"]
   },
   {
     id: 2,
     name: "Tinita Gerber",
     role: "Compliance Strategist",
     image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/b99v3l64_Tinita%20Image.jpg",
-    bio: "Tinita blends legal expertise with practical compliance know-how, bringing nearly 7 years of experience including 4 years in financial services.",
+    bio: "Tinita blends legal expertise with practical compliance know-how, bringing 7 years of corporate legal advisory experience.",
     expertise: [
       "Long-Term Insurance & FAIS expertise",
-      "FIC, BCEA, LRA, B-BBEE, CPA, POPIA",
-      "Law degree with business/economics specialization",
+      "FIC, POPIA",
+      "BCom Law",
       "Proactive, detail-focused approach"
     ],
-    credentials: ["LLB", "7 Years", "FAIS Expert"]
+    credentials: ["BCom Law", "7 Years", "FAIS Expert"]
   },
   {
     id: 3,
     name: "Rigert du Toit",
     role: "Contract Drafting Specialist",
     image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/dfswvj9w_Rigert.jpg",
-    bio: "With over 4 years of FAIS-related compliance experience, Rigert builds frameworks that elevate operational integrity.",
+    bio: "With over four years of FAIS-related compliance experience, Rigert develops robust frameworks that strengthen operational integrity. He is also a contract specialist with a keen eye for detail.",
     expertise: [
       "FAIS, FICA, POPIA legislation",
       "Long-Term Insurance compliance",
       "Contract drafting and policy frameworks",
       "Solutions-driven practical approach"
     ],
-    credentials: ["LLB Cum Laude", "RE5 & RE1", "4+ Years"]
+    credentials: ["LLB Cum Laude", "FAIS Expert", "4+ Years"]
   }
 ];
 
