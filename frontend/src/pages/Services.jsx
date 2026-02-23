@@ -146,7 +146,7 @@ const Services = () => {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {['FIC', 'NCR', 'FAIS', 'FSCA', 'Prudential Authority', 'Information Regulator', 'POPIA', 'FICA', 'Long-Term Insurance', 'Short-Term Insurance', 'B-BBEE', 'BCEA', 'LRA', 'CPA'].map((regulation, index) => (
+              {['FIC', 'NCR', 'FAIS', 'FSCA', 'Prudential Authority', 'Information Regulator', 'POPIA', 'FICA', 'Long-Term Insurance', 'Short-Term Insurance'].map((regulation, index) => (
                 <Card 
                   key={index} 
                   className="border-2 border-gray-200 hover:border-red-500 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
