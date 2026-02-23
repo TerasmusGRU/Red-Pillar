@@ -14,8 +14,8 @@ export const heroContent = {
   subtitle: "We flip the script on compliance—turning regulatory obligations into strategic advantages for Financial Institutions",
   cta: "Let's Connect",
   stats: [
-    { value: "11+", label: "Years of Experience" },
-    { value: "100+", label: "Regulatory Frameworks" },
+    { value: "20+", label: "Years of Experience" },
+    { value: "Free", label: "Initial Consultation" },
     { value: "24/7", label: "Support Available" }
   ]
 };
@@ -85,12 +85,11 @@ export const services = [
     id: 6,
     title: "Additional Services",
     icon: "FileText",
-    description: "Comprehensive support including reports, legislative updates, and policy drafting.",
+    description: "Comprehensive support including reports and legislative updates.",
     features: [
       "Monthly/quarterly compliance reports",
       "Legislative change summaries with impact analysis",
-      "Financial institution application assistance",
-      "Policy drafting and review"
+      "Financial institution application assistance"
     ]
   }
 ];
@@ -132,42 +131,43 @@ export const team = [
   {
     id: 1,
     name: "Chase Muir",
-    role: "Operational Risk Management and Compliance Specialist",
+    role: "Compliance Powerhouse",
     image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/2xugd5cm_Chase%20photo.jpeg",
     bio: "With over 11 years of experience in operational risk management and compliance, Chase brings unmatched expertise to every engagement.",
     expertise: [
-      "Operational Risk Management and Compliance",
+      "Operational Risk Management and Compliance Specialist",
       "Seasoned professional in regulator engagement",
-      "Registered with CAT I, II, IIA & IV",
-      "CISA 'Member'",
+      "Approved for CAT I, II, IIA & IV",
+      "CISA & IRMSA Member",
       "Practical, scalable compliance solutions"
     ],
-    credentials: ["CAT I, II, IIA & IV", "CISA Member", "11+ Years"]
+    credentials: ["CAT I, II, IIA & IV", "CISA & IRMSA", "11+ Years"]
   },
   {
     id: 2,
     name: "Tinita Gerber",
-    role: "Compliance Strategist",
+    role: "Compliance Officer",
     image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/b99v3l64_Tinita%20Image.jpg",
     bio: "Tinita blends legal expertise with practical compliance know-how, bringing 7 years of corporate legal advisory experience.",
     expertise: [
-      "Long-Term Insurance & FAIS expertise",
-      "FIC, POPIA",
-      "BCom Law",
-      "Proactive, detail-focused approach"
+      "Long-Term Insurance Specialist",
+      "Registered Cat I & IV FAIS Compliance Officer",
+      "FIC Compliance",
+      "POPIA Compliance",
+      "Combining Business Landscape with Legal expertise"
     ],
-    credentials: ["BCom Law", "7 Years", "FAIS Expert"]
+    credentials: ["BCom Law", "7 Years", "Cat I & IV FAIS CO"]
   },
   {
     id: 3,
     name: "Rigert du Toit",
-    role: "Contract Drafting Specialist",
+    role: "Compliance Officer",
     image: "https://customer-assets.emergentagent.com/job_7e581e08-03ab-4361-a9a2-08be5db6d298/artifacts/dfswvj9w_Rigert.jpg",
-    bio: "With over four years of FAIS-related compliance experience, Rigert develops robust frameworks that strengthen operational integrity. He is also a contract specialist with a keen eye for detail.",
+    bio: "With over four years of FAIS-related compliance experience, Rigert develops robust frameworks that strengthen operational integrity. He is also a contract specialist with a keen eye for detail, particularly in regulatory analysis.",
     expertise: [
-      "FAIS, FICA, POPIA legislation",
-      "Long-Term Insurance compliance",
-      "Contract drafting and policy frameworks",
+      "Long-Term Insurance Specialist",
+      "Registered Cat I & IV FAIS Compliance Officer",
+      "FIC Compliance",
       "Solutions-driven practical approach"
     ],
     credentials: ["LLB Cum Laude", "FAIS Expert", "4+ Years"]
