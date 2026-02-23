@@ -93,7 +93,7 @@ const About = () => {
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-4">
                     <div className="p-3 bg-red-50 rounded-lg flex-shrink-0">
-                      <CheckCircle className="h-6 w-6 text-red-600 transform rotate-180" />
+                      <XCircle className="h-6 w-6 text-red-600" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
