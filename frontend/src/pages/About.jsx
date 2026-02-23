@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Handshake, Award, Target, CheckCircle, ArrowRight } from 'lucide-react';
+import { Zap, Handshake, Award, Target, CheckCircle, ArrowRight, XCircle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { vision, mission, values, problemStatement } from '../mock/mockData';
