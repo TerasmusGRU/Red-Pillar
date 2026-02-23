@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Handshake, Award, Target, CheckCircle, ArrowRight, XCircle } from 'lucide-react';
+import { Zap, Handshake, Award, Target, CheckCircle, ArrowRight, Circle } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { vision, mission, values, problemStatement } from '../mock/mockData';
@@ -93,7 +93,7 @@ const About = () => {
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-4">
                     <div className="p-3 bg-red-50 rounded-lg flex-shrink-0">
-                      <XCircle className="h-6 w-6 text-red-600" />
+                      <Circle className="h-6 w-6 text-red-600 fill-red-600" />
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">

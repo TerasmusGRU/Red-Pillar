@@ -178,22 +178,22 @@ export const problemStatement = {
   title: "The Problem with Traditional Compliance",
   issues: [
     {
-      icon: "XCircle",
+      icon: "Circle",
       title: "Tick-Box Exercise",
       description: "Compliance treated as a burden rather than a strategic opportunity"
     },
     {
-      icon: "XCircle",
+      icon: "Circle",
       title: "Limited Services",
       description: "Generic solutions that don't address unique institutional needs"
     },
     {
-      icon: "XCircle",
+      icon: "Circle",
       title: "Reactive Approach",
       description: "Issues discovered too late, leading to costly penalties"
     },
     {
-      icon: "XCircle",
+      icon: "Circle",
       title: "Lack of Partnership",
       description: "Transactional relationships without strategic guidance"
     }
