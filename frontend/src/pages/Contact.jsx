@@ -6,7 +6,11 @@ import { Label } from '../components/ui/label';
 import { Textarea } from '../components/ui/textarea';
 import { Card, CardContent } from '../components/ui/card';
 import { toast } from 'sonner';
-import { companyInfo, submitContactForm } from '../mock/mockData';
+import { companyInfo } from '../mock/mockData';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,9 +34,9 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await submitContactForm(formData);
-      if (response.success) {
-        toast.success(response.message);
+      const response = await axios.post(`${API}/contact`, formData);
+      if (response.data.success) {
+        toast.success(response.data.message);
         setFormData({
           firstName: '',
           lastName: '',
@@ -43,7 +47,8 @@ const Contact = () => {
         });
       }
     } catch (error) {
-      toast.error('Something went wrong. Please try again.');
+      console.error('Contact form error:', error);
+      toast.error(error.response?.data?.detail || 'Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
