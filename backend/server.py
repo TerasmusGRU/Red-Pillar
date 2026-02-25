@@ -91,6 +91,61 @@ async def get_status_checks():
     
     return status_checks
 
+# Contact Form Endpoint
+@api_router.post("/contact", response_model=ContactFormResponse)
+async def submit_contact_form(request: ContactFormRequest, background_tasks: BackgroundTasks):
+    """
+    Handle contact form submissions and send email to info@redpillar.co.za
+    """
+    try:
+        # Store in database
+        contact_data = request.dict()
+        contact_data['id'] = str(uuid.uuid4())
+        contact_data['timestamp'] = datetime.utcnow()
+        await db.contacts.insert_one(contact_data)
+        
+        # Send email in background
+        background_tasks.add_task(send_contact_form_email, request.dict())
+        
+        return ContactFormResponse(
+            success=True,
+            message="Thank you for reaching out! We'll respond within 24 hours."
+        )
+    except EmailDeliveryError as e:
+        logger.error(f"Email delivery failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to send email notification")
+    except Exception as e:
+        logger.error(f"Contact form error: {str(e)}")
+        raise HTTPException(status_code=500, detail="An error occurred while processing your request")
+
+# Callback Request Endpoint
+@api_router.post("/callback", response_model=CallbackResponse)
+async def submit_callback_request(request: CallbackRequest, background_tasks: BackgroundTasks):
+    """
+    Handle callback requests and send email to info@redpillar.co.za
+    """
+    try:
+        # Store in database
+        callback_data = request.dict()
+        callback_data['id'] = str(uuid.uuid4())
+        callback_data['timestamp'] = datetime.utcnow()
+        await db.callbacks.insert_one(callback_data)
+        
+        # Send email in background
+        background_tasks.add_task(send_callback_request_email, request.dict())
+        
+        return CallbackResponse(
+            success=True,
+            message="We'll call you back shortly!"
+        )
+    except EmailDeliveryError as e:
+        logger.error(f"Email delivery failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to send email notification")
+    except Exception as e:
+        logger.error(f"Callback request error: {str(e)}")
+        raise HTTPException(status_code=500, detail="An error occurred while processing your request")
+
+
 # Include the router in the main app
 app.include_router(api_router)
 
