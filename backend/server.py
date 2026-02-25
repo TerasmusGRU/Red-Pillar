@@ -37,6 +37,31 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# Contact Form Models
+class ContactFormRequest(BaseModel):
+    firstName: str
+    lastName: Optional[str] = ""
+    email: EmailStr
+    phone: Optional[str] = ""
+    company: Optional[str] = ""
+    message: str
+
+class ContactFormResponse(BaseModel):
+    success: bool
+    message: str
+
+# Callback Request Models
+class CallbackRequest(BaseModel):
+    name: str
+    phone: str
+    email: Optional[EmailStr] = ""
+    reason: str
+    preferredTime: Optional[str] = ""
+
+class CallbackResponse(BaseModel):
+    success: bool
+    message: str
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
