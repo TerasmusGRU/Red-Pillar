@@ -5,7 +5,11 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { toast } from 'sonner';
-import { submitCallbackRequest, callbackReasons } from '../mock/mockData';
+import { callbackReasons } from '../mock/mockData';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const CallMeBack = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +33,9 @@ const CallMeBack = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await submitCallbackRequest(formData);
-      if (response.success) {
-        toast.success(response.message);
+      const response = await axios.post(`${API}/callback`, formData);
+      if (response.data.success) {
+        toast.success(response.data.message);
         setFormData({
           name: '',
           phone: '',
@@ -42,7 +46,8 @@ const CallMeBack = () => {
         setIsOpen(false);
       }
     } catch (error) {
-      toast.error('Something went wrong. Please try again.');
+      console.error('Callback request error:', error);
+      toast.error(error.response?.data?.detail || 'Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
